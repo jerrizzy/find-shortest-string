@@ -1,5 +1,16 @@
 function findShortestString(arr) {
   // type your code here
+  let shortest = arr[0];
+
+  for ( let i = 1; i < arr.length; i++) {
+    if (arr[i].length < shortest.length) {
+      shortest += arr[i]
+    } else if 
+      (arr[i].length >= shortest.length) {
+        shortest
+      }
+  }
+  return shortest
 }
 
 if (require.main === module) {
@@ -24,3 +35,7 @@ module.exports = findShortestString;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+// I need to iterate over each element of the array
+// get the length of string at index 0 
+// compare it to the length of the other element 
+// 
